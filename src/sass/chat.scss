@@ -1,0 +1,151 @@
+@import "base";
+@import "components";
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.main {
+	max-width: 850px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.main:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#chat-area {
+	margin: 0 auto;
+	width: 70%;
+	height: 100%;
+	float: left;
+}
+
+#side-area {
+	box-sizing: border-box;
+	height: 100%;
+	width: 30%;
+	float: left;
+	background-color: #2B2B2B;
+	padding: 10px;
+}
+
+#user-photo {
+	height: 60px;
+	width: 60px;
+	background-color: black;
+}
+
+#chat-area-haeder:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#ip-table {
+	padding: 10px 0;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	overflow-x: hidden; 
+	overflow-y: auto;
+}
+
+.id-item {
+	border-width: 0 0 1px 0;
+	border-color: black;
+	border-style: solid;
+	cursor: pointer;
+}
+
+.id-item:active {
+	background-color: #333333;
+}
+
+.id-item.focus {
+	background-color: #333333;
+}
+
+#button-wrapper {
+	padding: 10px 0;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+#button-wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#button-red {
+	background-color: #DF7065;
+}
+#button-yellow {
+	background-color: #E6BB46;
+}
+#button-green {
+	background-color: #5BCC8B;
+}
+
+#title {
+	float: left;
+	margin: 15px 0 4px 20px;
+}
+
+#message {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 10px;
+	list-style-type: none;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch; /*ios*/
+}
+#message .bubble {
+	display: table;
+	min-width: 3em;
+	max-width: 70%;
+}
+#message .bubble.me {
+	color: white;
+	background-color: #3CAF36;
+}
+
+#message .bubble.me:before {
+	border-right-color: #3CAF36;
+}
+
+#control-bar {
+	box-sizing: border-box;
+	padding: 5px 5px;
+	background-color: #E8E8E8;
+}
+
+#control-bar:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#inputText {
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	padding: 0 6px;
+	border-width: 0;
+	margin: 0;
+	outline: none;
+	width: 85%;
+	height: 2em;
+}
+
+#send {
+	float: left;
+	width: 15%;
+	height: 2em;
+}
